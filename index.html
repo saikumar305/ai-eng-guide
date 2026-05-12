@@ -1,165 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Solution Engineer Roadmap - Healthcare Insurance</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: Inter, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
-    .card {
-      background: rgba(15, 23, 42, 0.8);
-      border: 1px solid #334155;
-      border-radius: 18px;
-      padding: 24px;
-      margin-bottom: 24px;
-      transition: all 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: #38bdf8;
-      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
-    }
-    .layer-title {
-      color: #38bdf8;
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-    .tag {
-      display: inline-block;
-      background: #1e293b;
-      color: #7dd3fc;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      margin: 4px;
-    }
-    .diagram {
-      background: #020617;
-      border: 1px dashed #475569;
-      padding: 20px;
-      border-radius: 14px;
-      overflow-x: auto;
-      margin-top: 18px;
-      font-family: monospace;
-      white-space: pre-wrap;
-      line-height: 1.6;
-    }
-    .nav-link {
-      padding: 10px 14px;
-      border-radius: 10px;
-      transition: 0.2s;
-    }
-    .nav-link:hover {
-      background: #1e293b;
-      color: #38bdf8;
-    }
-  </style>
-</head>
-<body>
-  <div class="flex min-h-screen">
-
-    <aside class="w-72 bg-slate-950 border-r border-slate-800 p-6 sticky top-0 h-screen overflow-y-auto hidden lg:block">
-      <h1 class="text-2xl font-bold text-sky-400 mb-6">AI Solution Engineer</h1>
-      <p class="text-slate-400 text-sm mb-6">
-        Healthcare Insurance AI Application Guide
-      </p>
-
-      <nav class="space-y-2 text-sm">
-        <a href="#overview" class="block nav-link">1. Overview</a>
-        <a href="#domain" class="block nav-link">2. Insurance Domain</a>
-        <a href="#python" class="block nav-link">3. Python Foundation</a>
-        <a href="#backend" class="block nav-link">4. Backend APIs</a>
-        <a href="#database" class="block nav-link">5. Databases</a>
-        <a href="#vectordb" class="block nav-link">6. Vector Databases</a>
-        <a href="#graphdb" class="block nav-link">7. Graph Databases</a>
-        <a href="#documents" class="block nav-link">8. Document Processing</a>
-        <a href="#machinelearning" class="block nav-link">9. Machine Learning</a>
-        <a href="#llm" class="block nav-link">10. LLM & Generative AI</a>
-        <a href="#rag" class="block nav-link">11. RAG Systems</a>
-        <a href="#agents" class="block nav-link">12. Agentic AI</a>
-        <a href="#multiagent" class="block nav-link">13. Multi-Agent Orchestration</a>
-        <a href="#frontend" class="block nav-link">14. Frontend</a>
-        <a href="#cloud" class="block nav-link">15. Cloud & DevOps</a>
-        <a href="#security" class="block nav-link">16. Security & HIPAA</a>
-        <a href="#monitoring" class="block nav-link">17. Monitoring</a>
-        <a href="#workflow" class="block nav-link">18. End-to-End Workflow</a>
-        <a href="#roadmap" class="block nav-link">19. Learning Roadmap</a>
-      </nav>
-    </aside>
-
-    <main class="flex-1 p-6 md:p-12 max-w-7xl mx-auto">
-
-      <section id="overview" class="mb-12">
-        <h1 class="text-5xl font-bold text-sky-400 mb-4">
-          AI Solution Engineer in Healthcare Insurance
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Solution Engineer Roadmap - Healthcare Insurance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen">
+      <aside
+        class="w-72 bg-slate-950 border-r border-slate-800 p-6 sticky top-0 h-screen overflow-y-auto hidden lg:block"
+      >
+        <h1 class="text-2xl font-bold text-sky-400 mb-6">
+          AI Solution Engineer
         </h1>
-
-        <p class="text-lg text-slate-300 leading-8 mt-6">
-          An AI Solution Engineer in a healthcare insurance company works at the intersection of software engineering,
-          artificial intelligence, healthcare workflows, and enterprise systems.
-          The role is less about building AI models from scratch and more about integrating AI into real-world insurance operations.
+        <p class="text-slate-400 text-sm mb-6">
+          Healthcare Insurance AI Application Guide
         </p>
 
-        <p class="text-lg text-slate-300 leading-8 mt-6">
-          Modern healthcare insurance companies process millions of claims, policy documents,
-          prior authorizations, invoices, EDI transactions, and customer interactions.
-          AI systems help automate these operations by extracting information from documents,
-          detecting fraud, summarizing claims, answering policy questions, and assisting claim adjusters.
-        </p>
+        <nav class="space-y-2 text-sm">
+          <a href="#overview" class="block nav-link">1. Overview</a>
+          <a href="#domain" class="block nav-link">2. Insurance Domain</a>
+          <a href="#python" class="block nav-link">3. Python Foundation</a>
+          <a href="#backend" class="block nav-link">4. Backend APIs</a>
+          <a href="#database" class="block nav-link">5. Databases</a>
+          <a href="#vectordb" class="block nav-link">6. Vector Databases</a>
+          <a href="#graphdb" class="block nav-link">7. Graph Databases</a>
+          <a href="#documents" class="block nav-link">8. Document Processing</a>
+          <a href="#machinelearning" class="block nav-link"
+            >9. Machine Learning</a
+          >
+          <a href="#llm" class="block nav-link">10. LLM & Generative AI</a>
+          <a href="#rag" class="block nav-link">11. RAG Systems</a>
+          <a href="#agents" class="block nav-link">12. Agentic AI</a>
+          <a href="#multiagent" class="block nav-link"
+            >13. Multi-Agent Orchestration</a
+          >
+          <a href="#frontend" class="block nav-link">14. Frontend</a>
+          <a href="#cloud" class="block nav-link">15. Cloud & DevOps</a>
+          <a href="#security" class="block nav-link">16. Security & HIPAA</a>
+          <a href="#monitoring" class="block nav-link">17. Monitoring</a>
+          <a href="#workflow" class="block nav-link">18. End-to-End Workflow</a>
+          <a href="#roadmap" class="block nav-link">19. Learning Roadmap</a>
+        </nav>
+      </aside>
 
-        <div class="card mt-8">
-          <h2 class="text-2xl font-bold text-emerald-400 mb-4">What an AI Solution Engineer Actually Does</h2>
+      <main class="flex-1 p-6 md:p-12 max-w-7xl mx-auto">
+        <section id="overview" class="mb-12">
+          <h1 class="text-5xl font-bold text-sky-400 mb-4">
+            AI Solution Engineer in Healthcare Insurance
+          </h1>
 
-          <div class="grid md:grid-cols-2 gap-6 mt-6">
-            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-              <h3 class="font-bold text-sky-300 mb-3">Backend Engineering</h3>
-              <p>Create APIs, connect databases, integrate AI services, and manage workflows.</p>
+          <p class="text-lg text-slate-300 leading-8 mt-6">
+            An AI Solution Engineer in a healthcare insurance company works at
+            the intersection of software engineering, artificial intelligence,
+            healthcare workflows, and enterprise systems. The role is less about
+            building AI models from scratch and more about integrating AI into
+            real-world insurance operations.
+          </p>
+
+          <p class="text-lg text-slate-300 leading-8 mt-6">
+            Modern healthcare insurance companies process millions of claims,
+            policy documents, prior authorizations, invoices, EDI transactions,
+            and customer interactions. AI systems help automate these operations
+            by extracting information from documents, detecting fraud,
+            summarizing claims, answering policy questions, and assisting claim
+            adjusters.
+          </p>
+
+          <div class="card mt-8">
+            <h2 class="text-2xl font-bold text-emerald-400 mb-4">
+              What an AI Solution Engineer Actually Does
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+                <h3 class="font-bold text-sky-300 mb-3">Backend Engineering</h3>
+                <p>
+                  Create APIs, connect databases, integrate AI services, and
+                  manage workflows.
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+                <h3 class="font-bold text-sky-300 mb-3">AI Integration</h3>
+                <p>
+                  Connect LLMs, OCR systems, vector databases, and ML models
+                  into business applications.
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+                <h3 class="font-bold text-sky-300 mb-3">
+                  Healthcare Workflows
+                </h3>
+                <p>
+                  Understand claims, policies, EDI files, fraud detection, and
+                  authorization workflows.
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+                <h3 class="font-bold text-sky-300 mb-3">Production Systems</h3>
+                <p>Deploy scalable, secure, monitored enterprise AI systems.</p>
+              </div>
             </div>
 
-            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-              <h3 class="font-bold text-sky-300 mb-3">AI Integration</h3>
-              <p>Connect LLMs, OCR systems, vector databases, and ML models into business applications.</p>
+            <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+              Typical Technologies You Will Encounter
+            </h2>
+
+            <div class="mt-5">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">React</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">pgvector</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">AWS</span>
             </div>
 
-            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-              <h3 class="font-bold text-sky-300 mb-3">Healthcare Workflows</h3>
-              <p>Understand claims, policies, EDI files, fraud detection, and authorization workflows.</p>
-            </div>
+            <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+              End-to-End AI Claim Workflow
+            </h2>
 
-            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-              <h3 class="font-bold text-sky-300 mb-3">Production Systems</h3>
-              <p>Deploy scalable, secure, monitored enterprise AI systems.</p>
-            </div>
-          </div>
-
-          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">Typical Technologies You Will Encounter</h2>
-
-          <div class="mt-5">
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">React</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">pgvector</span>
-            <span class="tag">LangChain</span>
-            <span class="tag">Ollama</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Kubernetes</span>
-            <span class="tag">AWS</span>
-          </div>
-
-          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">End-to-End AI Claim Workflow</h2>
-
-          <div class="diagram mt-6">
-<pre><code>USER uploads medical claim PDF
+            <div class="diagram mt-6">
+              <pre><code>USER uploads medical claim PDF
         │
         ▼
 Frontend Application (React)
@@ -178,686 +148,1019 @@ Database stores results
         │
         ▼
 Claim Adjuster Dashboard</code></pre>
+            </div>
+
+            <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+              Core Engineering Mindset
+            </h2>
+
+            <p class="leading-8 text-slate-300">
+              Most enterprise AI systems are not just one AI model. They are
+              combinations of APIs, databases, workflows, document systems,
+              retrieval systems, orchestration layers, monitoring tools, and
+              frontend applications.
+            </p>
+
+            <p class="leading-8 text-slate-300 mt-4">
+              Your primary goal as an AI Solution Engineer is to understand how
+              all these layers communicate with each other.
+            </p>
+          </div>
+        </section>
+
+        <section id="domain" class="card">
+          <div class="layer-title">
+            2. Healthcare Insurance Domain Knowledge
           </div>
 
-          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">Core Engineering Mindset</h2>
-
           <p class="leading-8 text-slate-300">
-            Most enterprise AI systems are not just one AI model.
-            They are combinations of APIs, databases, workflows, document systems,
-            retrieval systems, orchestration layers, monitoring tools, and frontend applications.
+            Before understanding AI systems in healthcare insurance, it is
+            important to understand how the healthcare insurance ecosystem
+            itself works.
           </p>
 
           <p class="leading-8 text-slate-300 mt-4">
-            Your primary goal as an AI Solution Engineer is to understand how all these layers communicate with each other.
+            Healthcare insurance companies sit between patients, hospitals,
+            providers, pharmacies, employers, and government systems. Every day,
+            these companies process millions of medical claims, policy
+            validations, reimbursements, authorizations, and compliance checks.
           </p>
-        </div>
-      </section>
 
-      <section id="domain" class="card">
-        <div class="layer-title">1. Healthcare Insurance Domain Knowledge</div>
-
-        <p class="leading-8 text-slate-300">
-          Before AI, understand the domain. Most healthcare insurance AI systems revolve around claims processing,
-          policy validation, fraud detection, prior authorization, and customer support.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">Claims</span>
-          <span class="tag">EDI 837P</span>
-          <span class="tag">ICD Codes</span>
-          <span class="tag">CPT Codes</span>
-          <span class="tag">Prior Authorization</span>
-          <span class="tag">Fraud Detection</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 mb-3 text-yellow-300">Example</h3>
-
-        <p class="leading-8 text-slate-300">
-          A hospital sends an EDI 837P file containing treatment information.
-          Your system extracts diagnosis codes, verifies eligibility, checks policy rules,
-          and predicts whether the claim might be denied.
-        </p>
-      </section>
-
-      <section id="python" class="card">
-        <div class="layer-title">2. Python Foundation</div>
-
-        <p class="leading-8 text-slate-300">
-          Python is the primary language for AI systems because of its simplicity and huge ecosystem.
-        </p>
-
-        <h3 class="text-xl font-bold mt-6 text-yellow-300">Why Python?</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Easy syntax</li>
-          <li>Massive AI libraries</li>
-          <li>Great for backend APIs</li>
-          <li>Excellent data processing capabilities</li>
-          <li>Industry standard for AI/ML</li>
-        </ul>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Important Concepts</h3>
-
-        <div class="grid md:grid-cols-2 gap-4 mt-5">
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h4 class="font-bold text-sky-300 mb-2">Core Python</h4>
-            <p>Variables, loops, functions, classes, file handling</p>
+          <div class="mt-5">
+            <span class="tag">Claims Processing</span>
+            <span class="tag">EDI Transactions</span>
+            <span class="tag">ICD Codes</span>
+            <span class="tag">CPT Codes</span>
+            <span class="tag">Fraud Detection</span>
+            <span class="tag">Prior Authorization</span>
+            <span class="tag">Policy Validation</span>
+            <span class="tag">Member Eligibility</span>
           </div>
 
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h4 class="font-bold text-sky-300 mb-2">Data Processing</h4>
-            <p>Pandas, NumPy, CSV handling, JSON manipulation</p>
+          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+            Core Entities in Healthcare Insurance
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300 mb-3">Patients / Members</h3>
+              <p>
+                Individuals covered under an insurance plan who receive medical
+                services.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300 mb-3">Providers</h3>
+              <p>
+                Hospitals, clinics, pharmacies, or doctors who provide
+                healthcare services.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300 mb-3">Payers</h3>
+              <p>
+                Insurance companies that evaluate claims and reimburse
+                healthcare providers.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300 mb-3">Claims</h3>
+              <p>
+                Requests sent by providers asking the insurance company to pay
+                for treatments or procedures.
+              </p>
+            </div>
           </div>
 
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h4 class="font-bold text-sky-300 mb-2">API Development</h4>
-            <p>FastAPI, request handling, async programming</p>
+          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+            Understanding the Claims Lifecycle
+          </h2>
+
+          <p class="leading-8 text-slate-300">
+            Claims processing is the heart of healthcare insurance systems. AI
+            is heavily used to automate and optimize this workflow.
+          </p>
+
+          <div class="diagram mt-6">
+            <pre><code>Patient visits Hospital
+        │
+        ▼
+Hospital provides treatment
+        │
+        ▼
+Provider submits claim to Insurance Company
+        │
+        ▼
+Claim validation begins
+        │
+        ├── Verify member eligibility
+        ├── Validate policy coverage
+        ├── Check diagnosis codes
+        ├── Detect fraud patterns
+        ├── Validate billing information
+        └── Calculate reimbursement amount
+        │
+        ▼
+Approve / Reject / Review Claim
+        │
+        ▼
+Payment Processing</code></pre>
           </div>
 
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h4 class="font-bold text-sky-300 mb-2">AI Libraries</h4>
-            <p>PyTorch, Transformers, Scikit-learn</p>
-          </div>
-        </div>
+          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+            Important Healthcare Standards & Terms
+          </h2>
 
-        <div class="diagram"><pre><code>Workflow Diagram
+          <div class="space-y-6 mt-6">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-yellow-300">EDI 837P / 837I</h3>
+              <p class="mt-2">
+                Standard electronic format used for sending healthcare claims
+                between providers and payers.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-yellow-300">ICD Codes</h3>
+              <p class="mt-2">
+                Diagnosis codes representing diseases or medical conditions.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-yellow-300">CPT Codes</h3>
+              <p class="mt-2">
+                Procedure codes representing treatments or services performed by
+                providers.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-yellow-300">Prior Authorization</h3>
+              <p class="mt-2">
+                Approval process where insurance companies verify whether a
+                treatment is covered before it is performed.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+            How AI is Used in Modern Healthcare Insurance
+          </h2>
+
+          <p class="leading-8 text-slate-300">
+            Healthcare insurance companies generate enormous amounts of
+            structured and unstructured data. AI helps automate operations,
+            reduce manual effort, improve decision-making, and detect patterns
+            that humans may miss.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-emerald-300 mb-3">
+                Document Understanding
+              </h3>
+              <p>
+                AI extracts information from PDFs, scanned claims, invoices, and
+                medical documents.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-emerald-300 mb-3">Fraud Detection</h3>
+              <p>
+                Machine learning models identify suspicious billing patterns and
+                fraudulent claims.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-emerald-300 mb-3">Claim Automation</h3>
+              <p>
+                AI automates claim approvals, validations, and reimbursement
+                calculations.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-emerald-300 mb-3">AI Chatbots</h3>
+              <p>
+                LLM-powered assistants answer policy questions and assist
+                support teams.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-emerald-300 mb-3">
+                Predictive Analytics
+              </h3>
+              <p>
+                AI predicts claim denials, patient risks, and high-cost
+                treatments.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-emerald-300 mb-3">
+                Clinical Summarization
+              </h3>
+              <p>
+                LLMs summarize lengthy medical records into concise insights for
+                reviewers.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+            Real-World AI Workflow Example
+          </h2>
+
+          <div class="diagram mt-6">
+            <pre><code>Claim PDF Uploaded
+        │
+        ▼
+OCR extracts medical text
+        │
+        ▼
+AI extracts diagnosis & procedure codes
+        │
+        ▼
+Rules engine validates policy coverage
+        │
+        ▼
+Fraud detection model calculates risk score
+        │
+        ▼
+Vector DB retrieves relevant policy clauses
+        │
+        ▼
+LLM generates human-readable summary
+        │
+        ▼
+Claim adjuster reviews recommendation</code></pre>
+          </div>
+
+          <h2 class="text-2xl font-bold text-emerald-400 mt-10 mb-4">
+            Why This Domain is Technically Challenging
+          </h2>
+
+          <ul class="list-disc ml-8 mt-4 space-y-4 text-slate-300">
+            <li>Massive amount of healthcare documents</li>
+            <li>Complex compliance requirements like HIPAA</li>
+            <li>Need for high accuracy in AI decisions</li>
+            <li>Large-scale structured and unstructured data</li>
+            <li>Real-time claim processing requirements</li>
+            <li>Fraud detection across millions of claims</li>
+            <li>Highly interconnected workflows and systems</li>
+          </ul>
+
+          <div class="bg-sky-950 border border-sky-700 rounded-2xl p-6 mt-10">
+            <h3 class="text-2xl font-bold text-sky-300 mb-4">
+              Key Understanding for an AI Solution Engineer
+            </h3>
+
+            <p class="leading-8 text-slate-200">
+              Healthcare AI is not only about building models. The real
+              challenge is integrating AI into business workflows safely,
+              securely, and reliably while handling highly sensitive healthcare
+              data.
+            </p>
+          </div>
+        </section>
+
+        <section id="python" class="card">
+          <div class="layer-title">3. Python Foundation</div>
+
+          <p class="leading-8 text-slate-300">
+            Python is the primary language for AI systems because of its
+            simplicity and huge ecosystem.
+          </p>
+
+          <h3 class="text-xl font-bold mt-6 text-yellow-300">Why Python?</h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Easy syntax</li>
+            <li>Massive AI libraries</li>
+            <li>Great for backend APIs</li>
+            <li>Excellent data processing capabilities</li>
+            <li>Industry standard for AI/ML</li>
+          </ul>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Important Concepts
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-4 mt-5">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h4 class="font-bold text-sky-300 mb-2">Core Python</h4>
+              <p>Variables, loops, functions, classes, file handling</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h4 class="font-bold text-sky-300 mb-2">Data Processing</h4>
+              <p>Pandas, NumPy, CSV handling, JSON manipulation</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h4 class="font-bold text-sky-300 mb-2">API Development</h4>
+              <p>FastAPI, request handling, async programming</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h4 class="font-bold text-sky-300 mb-2">AI Libraries</h4>
+              <p>PyTorch, Transformers, Scikit-learn</p>
+            </div>
+          </div>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
 
 Input → Processing Layer → AI/ML Systems → Databases → Final Output
 
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-      </section>
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+        </section>
 
-      <section id="backend" class="card">
-        <div class="layer-title">3. Backend APIs</div>
+        <section id="backend" class="card">
+          <div class="layer-title">4. Backend APIs</div>
 
-        <p class="leading-8 text-slate-300">
-          Backend APIs act as the brain coordinator of the application.
-          They receive requests from frontend applications and interact with AI systems.
-        </p>
+          <p class="leading-8 text-slate-300">
+            Backend APIs act as the brain coordinator of the application. They
+            receive requests from frontend applications and interact with AI
+            systems.
+          </p>
 
-        <div class="mt-5">
-          <span class="tag">FastAPI</span>
-          <span class="tag">Flask</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">Async Processing</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Why FastAPI?</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Very fast performance</li>
-          <li>Built-in Swagger API docs</li>
-          <li>Excellent async support</li>
-          <li>Easy AI model integration</li>
-        </ul>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-      </section>
-
-      <section id="database" class="card">
-        <div class="layer-title">4. Databases</div>
-
-        <p class="leading-8 text-slate-300">
-          Healthcare systems handle massive amounts of structured and unstructured data.
-        </p>
-
-        <div class="grid md:grid-cols-3 gap-5 mt-6">
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-sky-300">PostgreSQL</h3>
-            <p class="mt-3 text-slate-300">Stores claims, users, policies, audit logs.</p>
+          <div class="mt-5">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Flask</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Async Processing</span>
           </div>
 
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-sky-300">MongoDB</h3>
-            <p class="mt-3 text-slate-300">Stores extracted document JSON data.</p>
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Why FastAPI?</h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Very fast performance</li>
+            <li>Built-in Swagger API docs</li>
+            <li>Excellent async support</li>
+            <li>Easy AI model integration</li>
+          </ul>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+        </section>
+
+        <section id="database" class="card">
+          <div class="layer-title">5. Databases</div>
+
+          <p class="leading-8 text-slate-300">
+            Healthcare systems handle massive amounts of structured and
+            unstructured data.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-5 mt-6">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="text-lg font-bold text-sky-300">PostgreSQL</h3>
+              <p class="mt-3 text-slate-300">
+                Stores claims, users, policies, audit logs.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="text-lg font-bold text-sky-300">MongoDB</h3>
+              <p class="mt-3 text-slate-300">
+                Stores extracted document JSON data.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="text-lg font-bold text-sky-300">pgvector</h3>
+              <p class="mt-3 text-slate-300">
+                Stores embeddings for AI semantic search.
+              </p>
+            </div>
           </div>
 
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-sky-300">pgvector</h3>
-            <p class="mt-3 text-slate-300">Stores embeddings for AI semantic search.</p>
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Example</h3>
+
+          <p class="leading-8 text-slate-300">A patient claim may contain:</p>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Patient information</li>
+            <li>Diagnosis codes</li>
+            <li>Treatment notes</li>
+            <li>Doctor remarks</li>
+            <li>Scanned PDFs</li>
+          </ul>
+        </section>
+
+        <section id="vectordb" class="card">
+          <div class="layer-title">6. Vector Databases</div>
+
+          <p class="leading-8 text-slate-300">
+            Vector databases are one of the most important parts of modern AI
+            applications. They store embeddings, which are numerical
+            representations of text.
+          </p>
+
+          <div class="mt-5">
+            <span class="tag">pgvector</span>
+            <span class="tag">Pinecone</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">ChromaDB</span>
+            <span class="tag">Embeddings</span>
           </div>
-        </div>
 
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Example</h3>
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Simple Analogy</h3>
 
-        <p class="leading-8 text-slate-300">
-          A patient claim may contain:
-        </p>
+          <p class="leading-8 text-slate-300">
+            Think of a vector database like Google Search for company documents.
+            Instead of searching exact words, it searches meaning.
+          </p>
 
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Patient information</li>
-          <li>Diagnosis codes</li>
-          <li>Treatment notes</li>
-          <li>Doctor remarks</li>
-          <li>Scanned PDFs</li>
-        </ul>
-      </section>
-
-      <section id="vectordb" class="card">
-        <div class="layer-title">6. Vector Databases</div>
-
-        <p class="leading-8 text-slate-300">
-          Vector databases are one of the most important parts of modern AI applications.
-          They store embeddings, which are numerical representations of text.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">pgvector</span>
-          <span class="tag">Pinecone</span>
-          <span class="tag">FAISS</span>
-          <span class="tag">ChromaDB</span>
-          <span class="tag">Embeddings</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Simple Analogy</h3>
-
-        <p class="leading-8 text-slate-300">
-          Think of a vector database like Google Search for company documents.
-          Instead of searching exact words, it searches meaning.
-        </p>
-
-        <div class="diagram"><pre><code>Workflow Diagram
+          <div class="diagram">
+            <pre><code>Workflow Diagram
 
 Input → Processing Layer → AI/ML Systems → Databases → Final Output
 
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
 
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Healthcare Example</h3>
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Healthcare Example
+          </h3>
 
-        <p class="leading-8 text-slate-300">
-          Suppose an agent asks:
-          "Does this policy cover knee replacement surgery?"
-        </p>
+          <p class="leading-8 text-slate-300">
+            Suppose an agent asks: "Does this policy cover knee replacement
+            surgery?"
+          </p>
 
-        <p class="leading-8 text-slate-300 mt-4">
-          The vector database searches all policy documents semantically and retrieves
-          the most relevant coverage clauses.
-        </p>
+          <p class="leading-8 text-slate-300 mt-4">
+            The vector database searches all policy documents semantically and
+            retrieves the most relevant coverage clauses.
+          </p>
 
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Why pgvector is Popular</h3>
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Why pgvector is Popular
+          </h3>
 
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Works directly inside PostgreSQL</li>
-          <li>No need for separate vector infrastructure initially</li>
-          <li>Easy integration with LangChain and LlamaIndex</li>
-          <li>Good for enterprise healthcare systems</li>
-        </ul>
-      </section>
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Works directly inside PostgreSQL</li>
+            <li>No need for separate vector infrastructure initially</li>
+            <li>Easy integration with LangChain and LlamaIndex</li>
+            <li>Good for enterprise healthcare systems</li>
+          </ul>
+        </section>
 
-      <section id="graphdb" class="card">
-        <div class="layer-title">7. Graph Databases</div>
+        <section id="graphdb" class="card">
+          <div class="layer-title">7. Graph Databases</div>
 
-        <p class="leading-8 text-slate-300">
-          Graph databases are designed to store relationships between entities.
-          They are extremely useful in fraud detection and healthcare relationship mapping.
-        </p>
+          <p class="leading-8 text-slate-300">
+            Graph databases are designed to store relationships between
+            entities. They are extremely useful in fraud detection and
+            healthcare relationship mapping.
+          </p>
 
-        <div class="mt-5">
-          <span class="tag">Neo4j</span>
-          <span class="tag">Knowledge Graphs</span>
-          <span class="tag">Fraud Networks</span>
-          <span class="tag">Relationship Mapping</span>
-        </div>
+          <div class="mt-5">
+            <span class="tag">Neo4j</span>
+            <span class="tag">Knowledge Graphs</span>
+            <span class="tag">Fraud Networks</span>
+            <span class="tag">Relationship Mapping</span>
+          </div>
 
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Simple Analogy</h3>
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Simple Analogy</h3>
 
-        <p class="leading-8 text-slate-300">
-          A relational database stores rows.
-          A graph database stores connections.
-        </p>
+          <p class="leading-8 text-slate-300">
+            A relational database stores rows. A graph database stores
+            connections.
+          </p>
 
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Healthcare Fraud Example</h3>
-
-        <p class="leading-8 text-slate-300">
-          Imagine 50 suspicious claims linked to the same provider,
-          same phone number, and same billing address.
-        </p>
-
-        <p class="leading-8 text-slate-300 mt-4">
-          A graph database can quickly uncover these hidden relationships,
-          which are difficult to identify using traditional SQL queries.
-        </p>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Where Graph DBs Help</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Fraud detection networks</li>
-          <li>Patient-provider relationships</li>
-          <li>Policy dependency mapping</li>
-          <li>Knowledge graph creation for AI systems</li>
-        </ul>
-      </section>
-
-      <section id="documents" class="card">
-        <div class="layer-title">8. Document Processing & OCR</div>
-
-        <p class="leading-8 text-slate-300">
-          Insurance companies heavily rely on PDFs, scanned documents, EDI files, and handwritten forms.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">OCR</span>
-          <span class="tag">Tesseract</span>
-          <span class="tag">AWS Textract</span>
-          <span class="tag">Azure Document Intelligence</span>
-          <span class="tag">PyMuPDF</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Purpose</h3>
-
-        <p class="leading-8 text-slate-300">
-          Convert unstructured documents into machine-readable structured data.
-        </p>
-
-        <div class="diagram"><pre><code>Workflow Diagram
+          <div class="diagram">
+            <pre><code>Workflow Diagram
 
 Input → Processing Layer → AI/ML Systems → Databases → Final Output
 
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
 
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Example Output</h3>
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Healthcare Fraud Example
+          </h3>
 
-        <div class="bg-slate-950 rounded-xl p-5 mt-4 border border-slate-700 overflow-auto">
-<pre>{
+          <p class="leading-8 text-slate-300">
+            Imagine 50 suspicious claims linked to the same provider, same phone
+            number, and same billing address.
+          </p>
+
+          <p class="leading-8 text-slate-300 mt-4">
+            A graph database can quickly uncover these hidden relationships,
+            which are difficult to identify using traditional SQL queries.
+          </p>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Where Graph DBs Help
+          </h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Fraud detection networks</li>
+            <li>Patient-provider relationships</li>
+            <li>Policy dependency mapping</li>
+            <li>Knowledge graph creation for AI systems</li>
+          </ul>
+        </section>
+
+        <section id="documents" class="card">
+          <div class="layer-title">8. Document Processing & OCR</div>
+
+          <p class="leading-8 text-slate-300">
+            Insurance companies heavily rely on PDFs, scanned documents, EDI
+            files, and handwritten forms.
+          </p>
+
+          <div class="mt-5">
+            <span class="tag">OCR</span>
+            <span class="tag">Tesseract</span>
+            <span class="tag">AWS Textract</span>
+            <span class="tag">Azure Document Intelligence</span>
+            <span class="tag">PyMuPDF</span>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Purpose</h3>
+
+          <p class="leading-8 text-slate-300">
+            Convert unstructured documents into machine-readable structured
+            data.
+          </p>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Example Output</h3>
+
+          <div
+            class="bg-slate-950 rounded-xl p-5 mt-4 border border-slate-700 overflow-auto"
+          >
+            <pre>
+{
   "patient_name": "John Doe",
   "claim_amount": 2500,
   "diagnosis_code": "I10",
   "provider": "City Hospital"
-}</pre>
-        </div>
-      </section>
-
-      <section id="machinelearning" class="card">
-        <div class="layer-title">9. Machine Learning Layer</div>
-
-        <p class="leading-8 text-slate-300">
-          This layer predicts outcomes using historical healthcare data.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-6 mt-6">
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-emerald-300">Fraud Detection</h3>
-            <p class="mt-3">Detect suspicious claims using anomaly detection.</p>
+}</pre
+            >
           </div>
+        </section>
 
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-emerald-300">Claim Approval Prediction</h3>
-            <p class="mt-3">Predict approve or deny probabilities.</p>
-          </div>
+        <section id="machinelearning" class="card">
+          <div class="layer-title">9. Machine Learning Layer</div>
 
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-emerald-300">Risk Scoring</h3>
-            <p class="mt-3">Estimate patient risk levels.</p>
-          </div>
-
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="text-lg font-bold text-emerald-300">Document Classification</h3>
-            <p class="mt-3">Identify whether document is claim, invoice, appeal, etc.</p>
-          </div>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Common ML Stack</h3>
-
-        <div class="mt-5">
-          <span class="tag">Scikit-learn</span>
-          <span class="tag">XGBoost</span>
-          <span class="tag">PyTorch</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">NumPy</span>
-        </div>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-      </section>
-
-      <section id="llm" class="card">
-        <div class="layer-title">10. LLM & Generative AI</div>
-
-        <p class="leading-8 text-slate-300">
-          Large Language Models help summarize documents, answer questions, and automate workflows.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">OpenAI</span>
-          <span class="tag">Llama</span>
-          <span class="tag">Ollama</span>
-          <span class="tag">LangChain</span>
-          <span class="tag">LlamaIndex</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Healthcare Use Cases</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Claim summarization</li>
-          <li>Chatbot for support teams</li>
-          <li>Medical note understanding</li>
-          <li>Policy Q&A systems</li>
-          <li>Automated email analysis</li>
-        </ul>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-      </section>
-
-      <section id="rag" class="card">
-        <div class="layer-title">11. RAG Systems (Retrieval-Augmented Generation)</div>
-
-        <p class="leading-8 text-slate-300">
-          RAG allows LLMs to answer questions using company-specific healthcare documents.
-        </p>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Why Important?</h3>
-
-        <p class="leading-8 text-slate-300">
-          Insurance companies cannot rely only on generic AI knowledge.
-          The AI must understand internal policy documents, coverage rules, and claims history.
-        </p>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Tech Stack</h3>
-
-        <div class="mt-5">
-          <span class="tag">LangChain</span>
-          <span class="tag">LlamaIndex</span>
-          <span class="tag">pgvector</span>
-          <span class="tag">FAISS</span>
-          <span class="tag">Ollama</span>
-        </div>
-      </section>
-
-      <section id="agents" class="card">
-        <div class="layer-title">12. Agentic AI</div>
-
-        <p class="leading-8 text-slate-300">
-          Traditional AI answers questions.
-          Agentic AI performs tasks autonomously.
-        </p>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Simple Understanding</h3>
-
-        <p class="leading-8 text-slate-300">
-          A normal chatbot responds.
-          An AI Agent thinks, plans, calls tools, and completes workflows.
-        </p>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">LangChain Role</h3>
-
-        <p class="leading-8 text-slate-300">
-          LangChain helps connect LLMs with tools.
-          It allows the AI to call APIs, databases, search systems,
-          and external services.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">LangChain Agents</span>
-          <span class="tag">Tool Calling</span>
-          <span class="tag">Memory</span>
-          <span class="tag">Workflows</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Healthcare Example</h3>
-
-        <p class="leading-8 text-slate-300">
-          An AI claims assistant can automatically:
-        </p>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Read uploaded claims</li>
-          <li>Check policy eligibility</li>
-          <li>Search medical history</li>
-          <li>Generate summaries</li>
-          <li>Suggest next actions</li>
-        </ul>
-      </section>
-
-      <section id="multiagent" class="card">
-        <div class="layer-title">13. Multi-Agent Orchestration</div>
-
-        <p class="leading-8 text-slate-300">
-          Large enterprise AI systems often use multiple specialized agents instead of one massive AI system.
-        </p>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Simple Analogy</h3>
-
-        <p class="leading-8 text-slate-300">
-          Think of it like a hospital team.
-          Each doctor has a specialization.
-          Similarly, each AI agent performs one specific task.
-        </p>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Why Multi-Agent Systems?</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Better specialization</li>
-          <li>More scalable systems</li>
-          <li>Easier debugging</li>
-          <li>Independent workflows</li>
-          <li>Enterprise-grade architecture</li>
-        </ul>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">LangChain in Multi-Agent Systems</h3>
-
-        <p class="leading-8 text-slate-300">
-          LangChain can orchestrate agents by passing outputs from one agent to another.
-          It acts like the manager coordinating the AI workers.
-        </p>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-      </section>
-
-      <section id="frontend" class="card">
-        <div class="layer-title">14. Frontend Layer</div>
-
-        <p class="leading-8 text-slate-300">
-          Frontend applications allow claim processors and support teams to interact with AI systems.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">React</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Tailwind CSS</span>
-          <span class="tag">Charts</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Example Dashboard Features</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Upload claim PDFs</li>
-          <li>View AI summaries</li>
-          <li>Check fraud alerts</li>
-          <li>Approve or reject claims</li>
-          <li>Analytics dashboards</li>
-        </ul>
-      </section>
-
-      <section id="cloud" class="card">
-        <div class="layer-title">15. Cloud & DevOps</div>
-
-        <p class="leading-8 text-slate-300">
-          AI applications require scalable infrastructure and deployment systems.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-5 mt-6">
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="font-bold text-sky-300">Docker</h3>
-            <p class="mt-2">Containerizes applications.</p>
-          </div>
-
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="font-bold text-sky-300">Kubernetes</h3>
-            <p class="mt-2">Manages containers at scale.</p>
-          </div>
-
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="font-bold text-sky-300">AWS / Azure</h3>
-            <p class="mt-2">Cloud hosting and AI services.</p>
-          </div>
-
-          <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
-            <h3 class="font-bold text-sky-300">CI/CD</h3>
-            <p class="mt-2">Automates deployment pipelines.</p>
-          </div>
-        </div>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-      </section>
-
-      <section id="security" class="card">
-        <div class="layer-title">16. Security & HIPAA Compliance</div>
-
-        <p class="leading-8 text-slate-300">
-          Healthcare data is extremely sensitive. Security is not optional.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">HIPAA</span>
-          <span class="tag">Encryption</span>
-          <span class="tag">RBAC</span>
-          <span class="tag">Audit Logs</span>
-          <span class="tag">JWT Authentication</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Important Security Concepts</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>Encrypt data at rest and in transit</li>
-          <li>Restrict access using roles</li>
-          <li>Track every user action</li>
-          <li>Protect patient information</li>
-        </ul>
-      </section>
-
-      <section id="monitoring" class="card">
-        <div class="layer-title">17. Monitoring & Observability</div>
-
-        <p class="leading-8 text-slate-300">
-          Production AI systems require monitoring to ensure reliability.
-        </p>
-
-        <div class="mt-5">
-          <span class="tag">Grafana</span>
-          <span class="tag">Prometheus</span>
-          <span class="tag">ELK Stack</span>
-          <span class="tag">Logs</span>
-        </div>
-
-        <h3 class="text-xl font-bold mt-8 text-yellow-300">Example Metrics</h3>
-
-        <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-          <li>API response times</li>
-          <li>AI model latency</li>
-          <li>OCR failures</li>
-          <li>Claim processing throughput</li>
-        </ul>
-      </section>
-
-      <section id="workflow" class="card">
-        <div class="layer-title">18. Complete End-to-End Architecture</div>
-
-        <div class="diagram"><pre><code>Workflow Diagram
-
-Input → Processing Layer → AI/ML Systems → Databases → Final Output
-
-This section explains how data flows through the healthcare AI application stack.</code></pre></div>
-      </section>
-
-      <section id="roadmap" class="card mb-20">
-        <div class="layer-title">19. Your 3-Month Learning Roadmap</div>
-
-        <div class="space-y-8 mt-8">
-
-          <div>
-            <h3 class="text-2xl font-bold text-emerald-400">Month 1 — Core Foundation</h3>
-
-            <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-              <li>Learn Python basics deeply</li>
-              <li>Understand APIs with FastAPI</li>
-              <li>Learn SQL and PostgreSQL</li>
-              <li>Understand JSON and REST APIs</li>
-              <li>Practice file handling and PDF reading</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="text-2xl font-bold text-emerald-400">Month 2 — AI & Document Systems</h3>
-
-            <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-              <li>Learn Pandas and NumPy</li>
-              <li>Learn Scikit-learn basics</li>
-              <li>Build OCR extraction pipelines</li>
-              <li>Understand embeddings and vector DBs</li>
-              <li>Build simple fraud detection model</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="text-2xl font-bold text-emerald-400">Month 3 — Production AI Systems</h3>
-
-            <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
-              <li>Learn Docker and Kubernetes basics</li>
-              <li>Build RAG applications</li>
-              <li>Use Ollama and Llama models</li>
-              <li>Deploy complete applications</li>
-              <li>Understand monitoring and security</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="bg-sky-950 border border-sky-700 rounded-2xl p-6 mt-10">
-          <h3 class="text-2xl font-bold text-sky-300 mb-4">Most Important Thing</h3>
-
-          <p class="leading-8 text-slate-200">
-            Your role is not to become a research scientist.
-            Your job is to understand how to integrate AI into real business workflows.
-            Companies value engineers who can connect documents, APIs, databases, AI models,
-            and frontend systems into a reliable healthcare application.
+          <p class="leading-8 text-slate-300">
+            This layer predicts outcomes using historical healthcare data.
           </p>
-        </div>
-      </section>
 
-    </main>
-  </div>
-</body>
+          <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="text-lg font-bold text-emerald-300">
+                Fraud Detection
+              </h3>
+              <p class="mt-3">
+                Detect suspicious claims using anomaly detection.
+              </p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="text-lg font-bold text-emerald-300">
+                Claim Approval Prediction
+              </h3>
+              <p class="mt-3">Predict approve or deny probabilities.</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="text-lg font-bold text-emerald-300">Risk Scoring</h3>
+              <p class="mt-3">Estimate patient risk levels.</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="text-lg font-bold text-emerald-300">
+                Document Classification
+              </h3>
+              <p class="mt-3">
+                Identify whether document is claim, invoice, appeal, etc.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Common ML Stack
+          </h3>
+
+          <div class="mt-5">
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+          </div>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+        </section>
+
+        <section id="llm" class="card">
+          <div class="layer-title">10. LLM & Generative AI</div>
+
+          <p class="leading-8 text-slate-300">
+            Large Language Models help summarize documents, answer questions,
+            and automate workflows.
+          </p>
+
+          <div class="mt-5">
+            <span class="tag">OpenAI</span>
+            <span class="tag">Llama</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">LlamaIndex</span>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Healthcare Use Cases
+          </h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Claim summarization</li>
+            <li>Chatbot for support teams</li>
+            <li>Medical note understanding</li>
+            <li>Policy Q&A systems</li>
+            <li>Automated email analysis</li>
+          </ul>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+        </section>
+
+        <section id="rag" class="card">
+          <div class="layer-title">
+            11. RAG Systems (Retrieval-Augmented Generation)
+          </div>
+
+          <p class="leading-8 text-slate-300">
+            RAG allows LLMs to answer questions using company-specific
+            healthcare documents.
+          </p>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Why Important?</h3>
+
+          <p class="leading-8 text-slate-300">
+            Insurance companies cannot rely only on generic AI knowledge. The AI
+            must understand internal policy documents, coverage rules, and
+            claims history.
+          </p>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Tech Stack</h3>
+
+          <div class="mt-5">
+            <span class="tag">LangChain</span>
+            <span class="tag">LlamaIndex</span>
+            <span class="tag">pgvector</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">Ollama</span>
+          </div>
+        </section>
+
+        <section id="agents" class="card">
+          <div class="layer-title">12. Agentic AI</div>
+
+          <p class="leading-8 text-slate-300">
+            Traditional AI answers questions. Agentic AI performs tasks
+            autonomously.
+          </p>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Simple Understanding
+          </h3>
+
+          <p class="leading-8 text-slate-300">
+            A normal chatbot responds. An AI Agent thinks, plans, calls tools,
+            and completes workflows.
+          </p>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">LangChain Role</h3>
+
+          <p class="leading-8 text-slate-300">
+            LangChain helps connect LLMs with tools. It allows the AI to call
+            APIs, databases, search systems, and external services.
+          </p>
+
+          <div class="mt-5">
+            <span class="tag">LangChain Agents</span>
+            <span class="tag">Tool Calling</span>
+            <span class="tag">Memory</span>
+            <span class="tag">Workflows</span>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Healthcare Example
+          </h3>
+
+          <p class="leading-8 text-slate-300">
+            An AI claims assistant can automatically:
+          </p>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Read uploaded claims</li>
+            <li>Check policy eligibility</li>
+            <li>Search medical history</li>
+            <li>Generate summaries</li>
+            <li>Suggest next actions</li>
+          </ul>
+        </section>
+
+        <section id="multiagent" class="card">
+          <div class="layer-title">13. Multi-Agent Orchestration</div>
+
+          <p class="leading-8 text-slate-300">
+            Large enterprise AI systems often use multiple specialized agents
+            instead of one massive AI system.
+          </p>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">Simple Analogy</h3>
+
+          <p class="leading-8 text-slate-300">
+            Think of it like a hospital team. Each doctor has a specialization.
+            Similarly, each AI agent performs one specific task.
+          </p>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Why Multi-Agent Systems?
+          </h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Better specialization</li>
+            <li>More scalable systems</li>
+            <li>Easier debugging</li>
+            <li>Independent workflows</li>
+            <li>Enterprise-grade architecture</li>
+          </ul>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            LangChain in Multi-Agent Systems
+          </h3>
+
+          <p class="leading-8 text-slate-300">
+            LangChain can orchestrate agents by passing outputs from one agent
+            to another. It acts like the manager coordinating the AI workers.
+          </p>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+        </section>
+
+        <section id="frontend" class="card">
+          <div class="layer-title">14. Frontend Layer</div>
+
+          <p class="leading-8 text-slate-300">
+            Frontend applications allow claim processors and support teams to
+            interact with AI systems.
+          </p>
+
+          <div class="mt-5">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Charts</span>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Example Dashboard Features
+          </h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Upload claim PDFs</li>
+            <li>View AI summaries</li>
+            <li>Check fraud alerts</li>
+            <li>Approve or reject claims</li>
+            <li>Analytics dashboards</li>
+          </ul>
+        </section>
+
+        <section id="cloud" class="card">
+          <div class="layer-title">15. Cloud & DevOps</div>
+
+          <p class="leading-8 text-slate-300">
+            AI applications require scalable infrastructure and deployment
+            systems.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-5 mt-6">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300">Docker</h3>
+              <p class="mt-2">Containerizes applications.</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300">Kubernetes</h3>
+              <p class="mt-2">Manages containers at scale.</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300">AWS / Azure</h3>
+              <p class="mt-2">Cloud hosting and AI services.</p>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-700">
+              <h3 class="font-bold text-sky-300">CI/CD</h3>
+              <p class="mt-2">Automates deployment pipelines.</p>
+            </div>
+          </div>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+        </section>
+
+        <section id="security" class="card">
+          <div class="layer-title">16. Security & HIPAA Compliance</div>
+
+          <p class="leading-8 text-slate-300">
+            Healthcare data is extremely sensitive. Security is not optional.
+          </p>
+
+          <div class="mt-5">
+            <span class="tag">HIPAA</span>
+            <span class="tag">Encryption</span>
+            <span class="tag">RBAC</span>
+            <span class="tag">Audit Logs</span>
+            <span class="tag">JWT Authentication</span>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Important Security Concepts
+          </h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>Encrypt data at rest and in transit</li>
+            <li>Restrict access using roles</li>
+            <li>Track every user action</li>
+            <li>Protect patient information</li>
+          </ul>
+        </section>
+
+        <section id="monitoring" class="card">
+          <div class="layer-title">17. Monitoring & Observability</div>
+
+          <p class="leading-8 text-slate-300">
+            Production AI systems require monitoring to ensure reliability.
+          </p>
+
+          <div class="mt-5">
+            <span class="tag">Grafana</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">ELK Stack</span>
+            <span class="tag">Logs</span>
+          </div>
+
+          <h3 class="text-xl font-bold mt-8 text-yellow-300">
+            Example Metrics
+          </h3>
+
+          <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+            <li>API response times</li>
+            <li>AI model latency</li>
+            <li>OCR failures</li>
+            <li>Claim processing throughput</li>
+          </ul>
+        </section>
+
+        <section id="workflow" class="card">
+          <div class="layer-title">18. Complete End-to-End Architecture</div>
+
+          <div class="diagram">
+            <pre><code>Workflow Diagram
+
+Input → Processing Layer → AI/ML Systems → Databases → Final Output
+
+This section explains how data flows through the healthcare AI application stack.</code></pre>
+          </div>
+        </section>
+
+        <section id="roadmap" class="card mb-20">
+          <div class="layer-title">19. Your 3-Month Learning Roadmap</div>
+
+          <div class="space-y-8 mt-8">
+            <div>
+              <h3 class="text-2xl font-bold text-emerald-400">
+                Month 1 — Core Foundation
+              </h3>
+
+              <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+                <li>Learn Python basics deeply</li>
+                <li>Understand APIs with FastAPI</li>
+                <li>Learn SQL and PostgreSQL</li>
+                <li>Understand JSON and REST APIs</li>
+                <li>Practice file handling and PDF reading</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-emerald-400">
+                Month 2 — AI & Document Systems
+              </h3>
+
+              <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+                <li>Learn Pandas and NumPy</li>
+                <li>Learn Scikit-learn basics</li>
+                <li>Build OCR extraction pipelines</li>
+                <li>Understand embeddings and vector DBs</li>
+                <li>Build simple fraud detection model</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold text-emerald-400">
+                Month 3 — Production AI Systems
+              </h3>
+
+              <ul class="list-disc ml-8 mt-4 space-y-3 text-slate-300">
+                <li>Learn Docker and Kubernetes basics</li>
+                <li>Build RAG applications</li>
+                <li>Use Ollama and Llama models</li>
+                <li>Deploy complete applications</li>
+                <li>Understand monitoring and security</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-sky-950 border border-sky-700 rounded-2xl p-6 mt-10">
+            <h3 class="text-2xl font-bold text-sky-300 mb-4">
+              Most Important Thing
+            </h3>
+
+            <p class="leading-8 text-slate-200">
+              Your role is not to become a research scientist. Your job is to
+              understand how to integrate AI into real business workflows.
+              Companies value engineers who can connect documents, APIs,
+              databases, AI models, and frontend systems into a reliable
+              healthcare application.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
